@@ -56,9 +56,6 @@ export const CTA = () => {
             </div>
 
             <div className="pt-6">
-              <p className="text-sm text-muted-foreground italic">
-                Een samenwerking tussen Achmea & MNK · Recordatio.AI
-              </p>
               <p className="text-xs text-muted-foreground mt-2">
                 "Making Every Conversation Count"
               </p>
