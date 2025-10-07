@@ -16,7 +16,7 @@ export const Hero = () => {
               </span>
               <br />
               <span className="text-foreground">
-                Nurture Response Safe and Export
+                Geautomatiseerd Patiënten Volgsysteem
               </span>
             </h1>
             
