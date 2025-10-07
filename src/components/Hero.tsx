@@ -10,12 +10,6 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <div className="inline-block">
-              <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full">
-                Recordatio.AI
-              </span>
-            </div>
-            
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 NuRS-e
