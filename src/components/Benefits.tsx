@@ -4,9 +4,9 @@ import { Clock, Award, Users, Smile, Zap, Globe } from "lucide-react";
 const benefits = [
   {
     icon: Clock,
-    title: "Tot 65% Tijdsbesparing",
+    title: "Tot wel 75% Tijdsbesparing",
     description: "5-10 uur per week minder telefonische consultaties",
-    stat: "65%"
+    stat: "75%"
   },
   {
     icon: Award,

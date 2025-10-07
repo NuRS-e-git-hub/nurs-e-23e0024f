@@ -5,7 +5,7 @@ import { Bot, Heart, Shield, Cpu, Globe } from "lucide-react";
 const features = [
   {
     icon: Bot,
-    title: "45-65% Automatisering",
+    title: "45-75% Automatisering",
     description: "Vervangt en ondersteunt telefonische consulten",
     highlight: "AI-powered"
   },
