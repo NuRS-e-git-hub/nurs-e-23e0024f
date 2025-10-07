@@ -21,8 +21,8 @@ export const Hero = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Een innovatief, digitaal patiëntenvolgsysteem dat gebruikmaakt van AI-technologie. 
-              Automatiseert tot <span className="font-bold text-accent">65% van de telefonische consulten</span> in de eerstelijnszorg.
+              Een innovatief, AI gedreven digitaal patiëntenvolgsysteem. 
+              Automatiseert tot wel <span className="font-bold text-accent">75% van alle telefonische consulten</span> in de eerstelijnszorg.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
