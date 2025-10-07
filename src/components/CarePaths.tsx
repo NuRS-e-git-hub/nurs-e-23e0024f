@@ -43,7 +43,7 @@ export const CarePaths = () => {
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">Geschikte Zorgpaden</Badge>
           <h2 className="text-4xl font-bold mb-4">Waar NuRS-e Direct Inzetbaar Is</h2>
           <p className="text-xl text-muted-foreground">
-            Ondersteunt diverse chronische zorgtrajecten met protocollaire nauwkeurigheid
+            Ondersteunt diverse chronische zorg- en ketenzorgtrajecten met protocollaire nauwkeurigheid
           </p>
         </div>
 
