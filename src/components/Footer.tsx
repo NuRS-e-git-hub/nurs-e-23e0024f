@@ -11,9 +11,7 @@ export const Footer = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <span>Recordatio.AI</span>
-            <span>·</span>
-            <span>Een samenwerking tussen Achmea & MNK</span>
+            <span>Een onderdeel van de Clear Mind Holding groep</span>
           </div>
 
           <div className="text-xs text-muted-foreground pt-4 border-t border-border/30">
