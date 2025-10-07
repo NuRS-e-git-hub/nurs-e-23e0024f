@@ -16,7 +16,7 @@ export const Hero = () => {
               </span>
               <br />
               <span className="text-foreground">
-                Geautomatiseerd Patiënten Volgsysteem
+                De Digitale Praktijkondersteuner
               </span>
             </h1>
             
