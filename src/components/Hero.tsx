@@ -6,7 +6,6 @@ import { ContactFormDialog } from "./ContactFormDialog";
 
 export const Hero = () => {
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const [isInfoOpen, setIsInfoOpen] = useState(false);
   
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-background to-muted/30 overflow-hidden">
@@ -43,7 +42,7 @@ export const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => setIsInfoOpen(true)}
+                onClick={() => setIsContactOpen(true)}
               >
                 Meer Informatie
               </Button>
@@ -52,11 +51,6 @@ export const Hero = () => {
             <ContactFormDialog 
               open={isContactOpen} 
               onOpenChange={setIsContactOpen}
-              type="contact"
-            />
-            <ContactFormDialog 
-              open={isInfoOpen} 
-              onOpenChange={setIsInfoOpen}
               type="contact"
             />
 
