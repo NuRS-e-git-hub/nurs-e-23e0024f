@@ -9,7 +9,7 @@ export const Hero = () => {
   
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-background to-muted/30 overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
       
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -34,7 +34,7 @@ export const Hero = () => {
                 variant="hero" 
                 size="lg" 
                 className="group"
-                onClick={() => setIsContactOpen(true)}
+                onClick={() => { console.log("Hero: Neem Contact Op clicked"); setIsContactOpen(true); }}
               >
                 Neem Contact Op
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
