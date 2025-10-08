@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, Stethoscope } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import { ContactFormDialog } from "./ContactFormDialog";
 
@@ -15,7 +15,8 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent flex items-center gap-3">
+                <Stethoscope className="w-12 h-12 lg:w-16 lg:h-16" style={{ color: 'hsl(var(--primary))' }} />
                 NuRS-e
               </span>
               <br />
