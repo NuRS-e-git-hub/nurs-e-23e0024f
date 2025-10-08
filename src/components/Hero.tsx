@@ -14,9 +14,11 @@ export const Hero = () => {
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
+            <div className="flex items-center gap-3 mb-2">
+              <Stethoscope className="w-10 h-10 lg:w-12 lg:h-12 text-primary" />
+            </div>
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent flex items-center gap-3">
-                <Stethoscope className="w-12 h-12 lg:w-16 lg:h-16" style={{ color: 'hsl(var(--primary))' }} />
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 NuRS-e
               </span>
               <br />
