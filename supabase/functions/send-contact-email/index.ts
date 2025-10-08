@@ -8,9 +8,10 @@ const corsHeaders = {
 };
 
 interface ContactEmailRequest {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
-  message: string;
+  phone: string;
   type: "contact" | "demo";
 }
 
@@ -21,9 +22,9 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { name, email, message, type }: ContactEmailRequest = await req.json();
+    const { firstName, lastName, email, phone, type }: ContactEmailRequest = await req.json();
 
-    console.log("Sending email:", { name, email, type });
+    console.log("Sending email:", { firstName, lastName, email, phone, type });
 
     const subject = type === "demo" ? "Nieuwe Demo Aanvraag - NuRS-e" : "Nieuw Contact Bericht - NuRS-e";
 
@@ -40,10 +41,10 @@ const handler = async (req: Request): Promise<Response> => {
         subject: subject,
         html: `
           <h2>${subject}</h2>
-          <p><strong>Naam:</strong> ${name}</p>
+          <p><strong>Voornaam:</strong> ${firstName}</p>
+          <p><strong>Achternaam:</strong> ${lastName}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Bericht:</strong></p>
-          <p>${message.replace(/\n/g, '<br>')}</p>
+          <p><strong>Telefoonnummer:</strong> ${phone}</p>
         `,
       }),
     });

@@ -25,9 +25,10 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 
 const contactFormSchema = z.object({
-  name: z.string().trim().min(1, "Naam is verplicht").max(100, "Naam moet korter dan 100 karakters zijn"),
+  firstName: z.string().trim().min(1, "Voornaam is verplicht").max(50, "Voornaam moet korter dan 50 karakters zijn"),
+  lastName: z.string().trim().min(1, "Achternaam is verplicht").max(50, "Achternaam moet korter dan 50 karakters zijn"),
   email: z.string().trim().email("Ongeldig email adres").max(255, "Email moet korter dan 255 karakters zijn"),
-  message: z.string().trim().min(1, "Bericht is verplicht").max(1000, "Bericht moet korter dan 1000 karakters zijn"),
+  phone: z.string().trim().min(10, "Telefoonnummer moet minimaal 10 cijfers bevatten").max(20, "Telefoonnummer moet korter dan 20 karakters zijn"),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -45,9 +46,10 @@ export const ContactFormDialog = ({ open, onOpenChange, type }: ContactFormDialo
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      name: "",
+      firstName: "",
+      lastName: "",
       email: "",
-      message: "",
+      phone: "",
     },
   });
 
@@ -99,12 +101,25 @@ export const ContactFormDialog = ({ open, onOpenChange, type }: ContactFormDialo
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
             <FormField
               control={form.control}
-              name="name"
+              name="firstName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Naam</FormLabel>
+                  <FormLabel>Voornaam</FormLabel>
                   <FormControl>
-                    <Input placeholder="Uw naam" {...field} />
+                    <Input placeholder="Uw voornaam" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="lastName"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Achternaam</FormLabel>
+                  <FormControl>
+                    <Input placeholder="Uw achternaam" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -125,19 +140,12 @@ export const ContactFormDialog = ({ open, onOpenChange, type }: ContactFormDialo
             />
             <FormField
               control={form.control}
-              name="message"
+              name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Bericht</FormLabel>
+                  <FormLabel>Telefoonnummer</FormLabel>
                   <FormControl>
-                    <Textarea 
-                      placeholder={type === "demo" 
-                        ? "Vertel ons wanneer u beschikbaar bent voor een demo..."
-                        : "Uw bericht..."
-                      }
-                      className="min-h-[120px]"
-                      {...field}
-                    />
+                    <Input type="tel" placeholder="+31 6 12345678" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
