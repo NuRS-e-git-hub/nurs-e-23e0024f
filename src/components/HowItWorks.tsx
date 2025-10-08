@@ -11,7 +11,7 @@ const steps = [
   {
     icon: MessageSquare,
     title: "Gestructureerd Gesprek",
-    description: "Volgt triageprotocollen per zorgpad in iedere taal met real-time interpretatie",
+    description: "Volgt triageprotocollen per zorgpad in iedere taal",
     step: "02"
   },
   {
