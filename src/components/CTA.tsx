@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, ArrowRight } from "lucide-react";
+import { ContactFormDialog } from "./ContactFormDialog";
 
 export const CTA = () => {
+  const [isDemoOpen, setIsDemoOpen] = useState(false);
+  
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -18,7 +22,12 @@ export const CTA = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="group">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="group"
+                onClick={() => setIsDemoOpen(true)}
+              >
                 Plan een Demo
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -26,6 +35,12 @@ export const CTA = () => {
                 Download Brochure
               </Button>
             </div>
+
+            <ContactFormDialog 
+              open={isDemoOpen} 
+              onOpenChange={setIsDemoOpen}
+              type="demo"
+            />
 
             <div className="pt-8 border-t border-border/50">
               <p className="text-sm text-muted-foreground mb-6">Contact opnemen</p>
