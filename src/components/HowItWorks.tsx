@@ -48,7 +48,7 @@ export const HowItWorks = () => {
                 <div className="hidden lg:block absolute top-16 left-[calc(100%-2rem)] w-[calc(100%-4rem)] h-0.5 bg-gradient-to-r from-primary to-accent opacity-30 z-0" />
               )}
               
-              <Card className="p-6 hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm border-border/50 relative">
+              <Card className="p-6 h-full min-h-[200px] hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-1 bg-card/80 backdrop-blur-sm border-border/50 relative flex flex-col">
                 <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold shadow-lg">
                   {step.step}
                 </div>
