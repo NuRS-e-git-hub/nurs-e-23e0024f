@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Bot, Heart, Shield, Cpu, Globe } from "lucide-react";
+import { Bot, Heart, Shield, Cpu, Globe, Award } from "lucide-react";
 
 const features = [
   {
@@ -32,6 +32,12 @@ const features = [
     title: "Meertalig",
     description: "Gesprekken in iedere gewenste taal",
     highlight: "Inclusief"
+  },
+  {
+    icon: Award,
+    title: "Compliance",
+    description: "ISO/IEC 27001, NEN 7510 en MDR gecertificeerd",
+    highlight: "Gecertificeerd"
   }
 ];
 
