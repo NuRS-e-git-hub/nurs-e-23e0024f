@@ -46,7 +46,7 @@ export const CTA = () => {
               <p className="text-sm text-muted-foreground mb-6">Contact opnemen</p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a 
-                  href="tel:+31610797527" 
+                  href="tel:+31202262244" 
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -54,7 +54,7 @@ export const CTA = () => {
                   </div>
                   <div className="text-left">
                     <p className="text-xs text-muted-foreground">Telefoon</p>
-                    <p className="font-semibold">+31 (0)6 10 79 75 27</p>
+                    <p className="font-semibold">+31 (0)20 226 2244</p>
                   </div>
                 </a>
                 

@@ -59,8 +59,8 @@ export const Hero = () => {
               <Phone className="w-5 h-5 text-primary" />
               <div>
                 <p className="text-sm text-muted-foreground">Contact</p>
-                <a href="tel:+31610797527" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
-                  +31 (0)6 10 79 75 27
+                <a href="tel:+31202262244" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                  +31 (0)20 226 2244
                 </a>
               </div>
             </div>
